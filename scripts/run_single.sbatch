@@ -11,4 +11,4 @@ module purge
 module load cuda/12.1
 source ~/nanogpt-env/bin/activate
 
-python src/train.py --steps 200 --eval_interval 50 --out_dir runs/debug --optimizer adam --lr 3e-4 --device cuda
+python3 src/train.py --steps 200 --eval_interval 50 --out_dir runs/debug --optimizer adam --lr 3e-4 --device cuda

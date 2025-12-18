@@ -8,7 +8,7 @@ This repo is a **self-contained** template for:
 
 ## Quick start (local / MSI interactive)
 ```bash
-python -m venv nanogpt-env
+python3 -m venv nanogpt-env
 source nanogpt-env/bin/activate
 pip install -r requirements.txt
 ```
@@ -26,7 +26,7 @@ edit `src/data.py` accordingly.
 
 ## Run a single debug job (CPU or 1 GPU)
 ```bash
-python src/train.py --steps 200 --eval_interval 50 --out_dir runs/debug --device auto
+python3 src/train.py --steps 200 --eval_interval 50 --out_dir runs/debug --device auto
 ```
 
 ## Run the full benchmark (9 experiments) on MSI (A40)
@@ -40,7 +40,7 @@ It uses a job array with concurrency limit (default `%2`). Change to `%3` if you
 ## Make plots + summary table
 After runs finish:
 ```bash
-python scripts/make_plots.py --runs_dir runs --out_dir report/figures
+python3 scripts/make_plots.py --runs_dir runs --out_dir report/figures
 ```
 
 Outputs:

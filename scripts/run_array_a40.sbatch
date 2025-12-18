@@ -12,7 +12,7 @@
 module purge
 module load cuda/12.1
 
-# Activate your python env (edit path)
+# Activate your python3 env (edit path)
 source ~/nanogpt-env/bin/activate
 
 # Map TASK_ID -> (optimizer, lr)
@@ -39,7 +39,7 @@ OUT_DIR=runs/${OPT}_lr${LR}
 mkdir -p "$OUT_DIR"
 
 echo "Running: optimizer=$OPT lr=$LR out_dir=$OUT_DIR"
-python src/train.py \
+python3 src/train.py \
   --config configs/base.yaml \
   --data_dir data \
   --out_dir "$OUT_DIR" \
