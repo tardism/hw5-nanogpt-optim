@@ -1,0 +1,19 @@
+# Common training defaults for HW3
+steps: 5000
+batch_size: 256
+block_size: 256
+eval_interval: 200
+eval_iters: 50
+grad_clip: 1.0
+weight_decay: 0.1
+beta1: 0.9
+beta2: 0.95
+eps: 1.0e-8
+seed: 1337
+
+# Model: GPT-2 small-ish (Nano-GPT 124M style)
+n_layer: 12
+n_head: 12
+n_embd: 768
+dropout: 0.1
+vocab_size: 50304

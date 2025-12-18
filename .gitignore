@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+nanogpt-env/
+.venv/
+
+# Data & large artifacts
+data/
+runs/**/ckpt*.pt
+runs/**/metrics.csv
+logs/
+
+# OS
+.DS_Store

@@ -1,0 +1,7 @@
+# 9-run sweep: 3 optimizers x 3 lrs
+# You can edit these lists.
+optimizers: [adam, rmsprop, signsgd]
+lrs:
+  adam:    [1e-4, 3e-4, 1e-3]
+  rmsprop: [1e-4, 1e-3, 3e-3]
+  signsgd: [1e-3, 1e-2, 3e-2]
