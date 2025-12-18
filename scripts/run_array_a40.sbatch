@@ -5,7 +5,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --time=02:30:00
-#SBATCH --array=0-8%2
+#SBATCH --array=0-8%3
 #SBATCH --output=logs/%x_%A_%a.out
 
 # === Adjust these if your MSI environment uses different modules ===
